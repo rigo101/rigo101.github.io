@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myFirstWebsite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-desktop">
+            <a href="#" class="logo"><img src="aperture.svg" alt="logo"></a>
+            <ul class="menu"> 
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Wiki</a></li>
+                <li><a href="#" target="_blank">GitHub</a></li>
+                <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-mobile">
+            <img src="aperture.svg" class="logo-mobil" alt="logo">
+            <ul class="menu-mobil"> 
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Wiki</a></li>
+                <li><a href="#" target="_blank">GitHub</a></li>
+                <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Ildiko RIGO</h1>
+            <h3 class="h3-profile">Front-end developer</h3>
+            <p>The path to becoming a front-end developer will definitely take some time. Becoming a front-end developer is not only about learning various front-end frameworks and programming languages. It is about the interaction, responsibilities and roles as a front-end developer.</p>
+            <p>Because the web is a rapidly evolving universe, great front-end developers should never stop learning. Even little things like following front-end experts on twitter will have impact on your learning curve.</p>
+        </section>
+        <div class="separator">
+            <span>-</span>
+            <span>-</span>
+            <span>-</span>
+        </div>
+        <section>
+            <h2>Technology wiki</h2>
+            <ul class="tech-wiki">
+                <li>   
+                    <h3>Logic gate</h3>
+                    <p>It is an idealized or physical device implementing a Boolean function; that is, it performs a logical operation on one or more binary inputs and produces a single binary output.</p>
+                    <a href="https://en.wikipedia.org/wiki/Logic_gate" target="_blank">See more</a>              
+                </li>
+                <li>
+                    <h3>ASCII</h3>
+                    <p>It stands for American Standard Code for Information Interchange. Computers can only understand numbers, so it is the numerical representation of a character such as 'a' or '@' or an action of some sort.</p>
+                    <a href="https://en.wikipedia.org/wiki/ASCII" target="_blank">See more</a>              
+                </li>
+                <li>
+                    <h3>Random-access memory</h3>
+                    <p>It is a form of computer data storage which stores frequently used program instructions to increase the general speed of a system. It can be randomly accessed. Data items to be read or written in almost the same amount of time irrespective of the physical location of data inside the memory.</p>
+                    <a href="https://en.wikipedia.org/wiki/Random-access_memory" target="_blank">See more</a>              
+                </li>
+                <li>
+                    <h3>A programming language</h3>
+                    <p>A formal language that specifies a set of instructions that can be used to produce various kinds of output. They generally consist of instructions for a computer and can be used to create programs that implement specific algorithms.</p>
+                    <a href="https://en.wikipedia.org/wiki/Programming_language" target="_blank">See more</a>              
+                </li>
+                <li>
+                    <h3>Domain Name System (DNS)</h3>
+                    <p>A hierarchical decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It associates various information with domain names assigned to each of the participating entities.</p>
+                    <a href="https://en.wikipedia.org/wiki/Domain_Name_System" target="_blank">See more</a>              
+                </li>
+                <li>
+                    <h3>The Hypertext Transfer Protocol (HTTP)</h3>
+                    <p>An application protocol for distributed, collaborative, and hypermedia information systems. It is the foundation of data communication for the World Wide Web. It is the standard protocol to exchange or transfer hypertext.</p>
+                    <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">See more</a>                                  
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy; Powered by GFA    
+    </footer>
+
+    <script>
+        const logoMobil = document.querySelector('.logo-mobil');
+        const menuMobil = document.querySelector('.menu-mobil');
+        menuMobil.style.display = 'none';
+        
+        logoMobil.addEventListener('click', () => {
+            menuMobil.style.display = (menuMobil.style.display === 'flex') ? 'none' : 'flex';
+        })
+    </script>
+</body>
+</html>
